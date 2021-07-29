@@ -152,6 +152,122 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-变量" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/%E5%8F%98%E9%87%8F/">变量</a>
+    </h1>
+  
+
+        
+        <a href="/%E5%8F%98%E9%87%8F/" class="archive-article-date">
+  	<time datetime="2021-07-29T18:13:38.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-变量的分类"><a href="#1-变量的分类" class="headerlink" title="1.变量的分类"></a>1.变量的分类</h2><p>按照数据类型分类可以分成以下几种</p>
+<p><img src="../images/bl.jpg"></p>
+<p>整型：byte(1字节=8bit) \ short(2字节) \ int(4字节) \ long(8字节)</p>
+<ul>
+<li>byte范围：-128 ~ 127</li>
+<li>声明long型变量，必须以”l”或”L”结尾</li>
+<li>整形的常量，默认类型是int型</li>
+<li>一般情况下，定义整形变量时，使用int型</li>
+</ul>
+<p>浮点型：float(4字节) \ double(8字节)</p>
+<ul>
+<li>浮点型，表示带小数点的数值</li>
+<li>float表示数值的范围比long还大</li>
+<li>定义float类型变量时，变量要以”f”或”F”结尾</li>
+<li>通常，定义浮点型变量时，使用double型。</li>
+<li>浮点型的常量，默认类型为：double</li>
+</ul>
+<p>字符型：char(1字符=2字节)</p>
+<ul>
+<li>定义char型变量，通常使用一对’’,内部只能写一个字符</li>
+<li>表示方式：1.声明一个字符 2.转义字符 3.直接使用 Unicode 值来表示字符型常量</li>
+</ul>
+<p>布尔型：boolean</p>
+<ul>
+<li>布尔类型又称逻辑类型，只有true和false两个值</li>
+<li>布尔类型通常被用在流程中作为判断条件</li>
+</ul>
+<h2 id="2-定义变量的格式"><a href="#2-定义变量的格式" class="headerlink" title="2.定义变量的格式"></a>2.定义变量的格式</h2><ul>
+<li>数据类型  变量名 = 变量值;</li>
+<li>数据类型  变量名</li>
+<li>变量名 = 变量值</li>
+</ul>
+<h2 id="3-变量命名的规则"><a href="#3-变量命名的规则" class="headerlink" title="3.变量命名的规则"></a>3.变量命名的规则</h2><ul>
+<li>变量名必须是一个有效的标识符</li>
+<li>变量名不可以使用Java中的关键字</li>
+<li>变量名不能重复</li>
+<li>应选择有意义的单词作为变量名</li>
+</ul>
+<h2 id="4-变量使用的注意点"><a href="#4-变量使用的注意点" class="headerlink" title="4.变量使用的注意点"></a>4.变量使用的注意点</h2><ul>
+<li>变量必须先声明，后使用</li>
+<li>变量都定义在其作用域内。只有在作用域内，它才是有效的。</li>
+<li>同一个作用域，不可以声明两个同名的变量</li>
+</ul>
+<h2 id="5-基本数据类型变量间运算规则"><a href="#5-基本数据类型变量间运算规则" class="headerlink" title="5.基本数据类型变量间运算规则"></a>5.基本数据类型变量间运算规则</h2><h3 id="5-1-涉及到的基本数据类型：除了boolean之外的其他7种"><a href="#5-1-涉及到的基本数据类型：除了boolean之外的其他7种" class="headerlink" title="5.1 涉及到的基本数据类型：除了boolean之外的其他7种"></a>5.1 涉及到的基本数据类型：除了boolean之外的其他7种</h3><h3 id="5-2-自动类型转换-只涉及7种基本数据类型）"><a href="#5-2-自动类型转换-只涉及7种基本数据类型）" class="headerlink" title="5.2 自动类型转换(只涉及7种基本数据类型）"></a>5.2 自动类型转换(只涉及7种基本数据类型）</h3><p>结论：当容量小的数据类型的变量与容量大的数据类型的变量做运算时，结果自动提升为容量大的数据类型。<br>    byte 、char 、short –&gt; int –&gt; long –&gt; float –&gt; double<br>    特别的：当byte、char、short三种类型的变量做运算时，结果为int型<br>说明：此时的容量大小指的是，表示数的范围的大和小。比如：float容量要大于long的容量</p>
+<h3 id="5-3-强制类型转换-只涉及7种基本数据类型）：自动类型提升运算的逆运算。"><a href="#5-3-强制类型转换-只涉及7种基本数据类型）：自动类型提升运算的逆运算。" class="headerlink" title="5.3 强制类型转换(只涉及7种基本数据类型）：自动类型提升运算的逆运算。"></a>5.3 强制类型转换(只涉及7种基本数据类型）：自动类型提升运算的逆运算。</h3><ul>
+<li>需要使用强转符：()</li>
+<li>注意点：强制类型转换，可能导致精度损失。</li>
+</ul>
+<h3 id="5-4-String与8种基本数据类型间的运算"><a href="#5-4-String与8种基本数据类型间的运算" class="headerlink" title="5.4 String与8种基本数据类型间的运算"></a>5.4 String与8种基本数据类型间的运算</h3><ul>
+<li>String属于引用数据类型,翻译为：字符串</li>
+<li>声明String类型变量时，使用一对””</li>
+<li>String可以和8种基本数据类型变量做运算，且运算只能是连接运算：+</li>
+<li>运算的结果仍然是String类型</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/%E5%8F%98%E9%87%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-测试" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
