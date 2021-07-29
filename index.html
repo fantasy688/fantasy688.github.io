@@ -152,6 +152,181 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-注释和API文档" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/29/%E6%B3%A8%E9%87%8A%E5%92%8CAPI%E6%96%87%E6%A1%A3/">注释和API文档</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/29/%E6%B3%A8%E9%87%8A%E5%92%8CAPI%E6%96%87%E6%A1%A3/" class="archive-article-date">
+  	<time datetime="2021-07-29T13:25:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.注释：Comment</p>
+<p>分类：</p>
+<p>单行注释：//</p>
+<p>多行注释：/*   */</p>
+<p>文档注释：/**   */</p>
+<p>作用：</p>
+<ul>
+<li>提高可读性，对所写的程序进行解释说明</li>
+<li>调试代码</li>
+<li>方便程序员之间的沟通</li>
+</ul>
+<p>特点：</p>
+<ul>
+<li>单行注释和多行注释所注释的内容都不参与编译</li>
+<li>多行注释不能嵌套使用</li>
+<li>单行注释可以被嵌套使用</li>
+<li> 注释内容可以被JDK提供的工具 javadoc 所解析</li>
+</ul>
+<p>2.Java API 文档</p>
+<p>Java API是Java平台的重要组成部分，在开发过程中，我们会经常用到api文档，类似说明书.</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html">https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html</a></p>
+<img src="../images/api.png" style="zoom:50%;" />
+
+<p>点击<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase-jdk8-doc-downloads.html#license-lightbox">jdk-8u301-docs-all.zip</a>进行下载</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/29/%E6%B3%A8%E9%87%8A%E5%92%8CAPI%E6%96%87%E6%A1%A3/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-写第一个Java程序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/07/29/%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">写第一个Java程序</a>
+    </h1>
+  
+
+        
+        <a href="/2021/07/29/%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/" class="archive-article-date">
+  	<time datetime="2021-07-29T11:44:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1-HelloWorld"><a href="#1-HelloWorld" class="headerlink" title="1.HelloWorld"></a>1.HelloWorld</h2><img src="../images/java1.png" style="zoom:67%;" />
+
+<h3 id="1-1编写程序"><a href="#1-1编写程序" class="headerlink" title="1.1编写程序"></a>1.1编写程序</h3><p>点击右键新建一个文本文档作为java的源文件，命名为HelloWorld.java，内容为以下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">class HelloChina&#123;</span><br><span class="line">	public static void main(String[] args)&#123;</span><br><span class="line">		System.out.println(&quot;Hello,World!&quot;);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>按Ctrl+S保存</p>
+<h3 id="1-2编译"><a href="#1-2编译" class="headerlink" title="1.2编译"></a>1.2编译</h3><p>按Win加R组合键，跳出运行窗口，输入cmd打开控制台，输入 javac HelloWorld.java</p>
+<h3 id="1-3运行"><a href="#1-3运行" class="headerlink" title="1.3运行"></a>1.3运行</h3><p>继续在控制台输入 java HelloChina</p>
+<h2 id="2-常见的问题"><a href="#2-常见的问题" class="headerlink" title="2.常见的问题"></a>2.常见的问题</h2><p><img src="../images/java2.png"></p>
+<ul>
+<li>后缀名隐藏问题</li>
+<li>当前路径错误</li>
+<li>源文件名写错或者不存在</li>
+</ul>
+<img src="../images/java3.png" style="zoom:120%;" />
+
+<ul>
+<li>类文件名写错</li>
+<li>类文件不在当前路径下，或者不在classpath指定路径下</li>
+</ul>
+<h2 id="3-总结第一个程序"><a href="#3-总结第一个程序" class="headerlink" title="3.总结第一个程序"></a>3.总结第一个程序</h2><ul>
+<li>java程序编写-编译-运行的过程<br>编写：我们将编写的java代码保存在以”.java”结尾的源文件中<br>编译：使用javac.exe命令编译我们的java源文件。格式：javac 源文件名.java<br>运行：使用java.exe命令解释运行我们的字节码文件。 格式：java 类名</li>
+<li>在一个java源文件中可以声明多个class。但是，只能最多有一个类声明为public的。<br>而且要求声明为public的类的类名必须与源文件名相同。</li>
+<li>程序的入口是main()方法。格式是固定的。</li>
+<li>输出语句：<br>System.out.println():先输出数据，然后换行<br>System.out.print():只输出数据<br>每一行执行语句都以”;”结束。</li>
+<li>编译的过程：编译以后，会生成一个或多个字节码文件。字节码文件的文件名与java源文件中的类名相同。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/07/29/%E5%86%99%E7%AC%AC%E4%B8%80%E4%B8%AAJava%E7%A8%8B%E5%BA%8F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-搭建开发环境" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
